@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aigou-core-common" />
+        <module name="aigou-core-config" />
+        <module name="aigou-core-dao" />
+        <module name="aigou-core-domain" />
+        <module name="aigou-facade-base" />
+        <module name="aigou-mq-base" />
+        <module name="aigou-service-base" />
+        <module name="aigou-service-common" />
+        <module name="aigou-service-pay" />
+        <module name="aigou-service-plat" />
+        <module name="aigou-service-product" />
+        <module name="aigou-service-quartz" />
+        <module name="aigou-service-usercenter" />
+        <module name="aigou-web-base" />
+        <module name="aigou-web-pay" />
+        <module name="aigou-web-plat" />
+        <module name="aigou-web-usercenter" />
+        <module name="aigou-web-www" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="aigou-core-common" target="1.8" />
+      <module name="aigou-core-config" target="1.8" />
+      <module name="aigou-core-dao" target="1.8" />
+      <module name="aigou-core-domain" target="1.8" />
+      <module name="aigou-facade-base" target="1.8" />
+      <module name="aigou-mq-base" target="1.8" />
+      <module name="aigou-parent" target="1.8" />
+      <module name="aigou-service-base" target="1.8" />
+      <module name="aigou-service-common" target="1.8" />
+      <module name="aigou-service-pay" target="1.8" />
+      <module name="aigou-service-plat" target="1.8" />
+      <module name="aigou-service-product" target="1.8" />
+      <module name="aigou-service-quartz" target="1.8" />
+      <module name="aigou-service-usercenter" target="1.8" />
+      <module name="aigou-web-base" target="1.8" />
+      <module name="aigou-web-pay" target="1.8" />
+      <module name="aigou-web-plat" target="1.8" />
+      <module name="aigou-web-usercenter" target="1.8" />
+      <module name="aigou-web-www" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

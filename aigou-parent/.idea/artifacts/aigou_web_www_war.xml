@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="aigou-web-www:war">
+    <output-path>$PROJECT_DIR$/aigou-web-www/target</output-path>
+    <root id="archive" name="aigou-web-www.war">
+      <element id="artifact" artifact-name="aigou-web-www:war exploded" />
+    </root>
+  </artifact>
+</component>
