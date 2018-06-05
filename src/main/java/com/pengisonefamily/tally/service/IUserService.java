@@ -1,8 +1,8 @@
-package cn.itsource.springboot.service;
+package com.pengisonefamily.tally.service;
 
 import java.util.List;
 
-import cn.itsource.springboot.domain.User;
+import com.pengisonefamily.tally.domain.User;
 
 public interface IUserService {
 	void add(User user);

@@ -1,7 +1,9 @@
-package cn.itsource.springboot.service;
+package com.pengisonefamily.tally.service;
 
 import java.util.List;
 
+import com.pengisonefamily.tally.App;
+import com.pengisonefamily.tally.domain.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +12,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.github.pagehelper.Page;
 
-import cn.itsource.springboot.App;
-import cn.itsource.springboot.domain.User;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest(classes=App.class)

@@ -1,11 +1,10 @@
-package cn.itsource.springboot.mapper;
+package com.pengisonefamily.tally.mapper;
 
 import java.util.List;
 
+import com.pengisonefamily.tally.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Options;
-
-import cn.itsource.springboot.domain.User;
 
 public interface UserMapper {
 

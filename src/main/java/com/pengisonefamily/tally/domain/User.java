@@ -1,4 +1,4 @@
-package cn.itsource.springboot.domain;
+package com.pengisonefamily.tally.domain;
 
 public class User {
 

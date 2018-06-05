@@ -1,4 +1,4 @@
-package cn.itsource.springboot;
+package com.pengisonefamily.tally;
 
 import java.util.Properties;
 

@@ -1,7 +1,10 @@
-package cn.itsource.springboot.service.impl;
+package com.pengisonefamily.tally.service.impl;
 
 import java.util.List;
 
+import com.pengisonefamily.tally.domain.User;
+import com.pengisonefamily.tally.mapper.UserMapper;
+import com.pengisonefamily.tally.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -9,9 +12,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 
-import cn.itsource.springboot.domain.User;
-import cn.itsource.springboot.mapper.UserMapper;
-import cn.itsource.springboot.service.IUserService;
 
 @Service
 @Transactional(propagation=Propagation.SUPPORTS,readOnly=true)
