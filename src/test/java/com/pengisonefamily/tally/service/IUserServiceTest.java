@@ -21,7 +21,7 @@ public class IUserServiceTest  {
 	private IUserService userService;
 	
 	@Test
-	public void test() {
+	public void testGetAll() {
 //		User user = new User("zl");
 //		System.out.println(user);
 //		userService.add(user);
@@ -37,5 +37,15 @@ public class IUserServiceTest  {
 		System.out.println(users.size());
 		System.out.println(users);
 	}
+
+	@Test
+	public void testAdd() {
+		User user = new User("事务模板测试");
+		System.out.println(user);
+		userService.add(user);
+		System.out.println(user);
+	}
+
+
 
 }

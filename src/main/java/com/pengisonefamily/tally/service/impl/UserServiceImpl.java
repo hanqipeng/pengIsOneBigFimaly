@@ -2,27 +2,61 @@ package com.pengisonefamily.tally.service.impl;
 
 import java.util.List;
 
+import com.github.pagehelper.StringUtil;
+import com.pengisonefamily.tally.callback.PengTransactionCallBack;
 import com.pengisonefamily.tally.domain.User;
+import com.pengisonefamily.tally.form.Result;
 import com.pengisonefamily.tally.mapper.UserMapper;
 import com.pengisonefamily.tally.service.IUserService;
+import com.pengisonefamily.tally.template.PengTransactionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.github.pagehelper.PageHelper;
 
 
 @Service
-@Transactional(propagation=Propagation.SUPPORTS,readOnly=true)
 public class UserServiceImpl implements IUserService {
 
+
+	/**数据库操作mapper*/
 	@Autowired
 	private UserMapper userMapper;
-	@Transactional
+
+	@Autowired
+	private PengTransactionTemplate pengTransactionTemplate;
+
+
+
 	@Override
-	public void add(User user) {
-		userMapper.save(user);
+	public void add(final User user) {
+
+		Result result = new Result();
+
+		pengTransactionTemplate.execute(result, new PengTransactionCallBack() {
+
+			@Override
+			public void lock() {
+				// 新增，无需锁表
+			}
+
+			@Override
+			public void checkParam() {
+				// 判断非空
+				if(StringUtil.isEmpty(user.getName())){
+					// 模拟一个异常
+					int i = 1/0;
+				}
+			}
+
+			@Override
+			public void doService() {
+				userMapper.save(user);
+			}
+		});
+
+
 	}
 
 	@Override
