@@ -1,3 +1,4 @@
+import query from '../services/example';
 
 export default {
 
@@ -12,6 +13,8 @@ export default {
 
   effects: {
     *fetch({ payload }, { call, put }) {  // eslint-disable-line
+      const response = yield call(query);
+      console.debug(response);
       yield put({ type: 'save' });
     },
   },
